@@ -26,9 +26,11 @@ author:
 twitter_username:
 github_username: “huangjieqi”
 logo: # path of site logo, e.g. "/assets/images/logo.png"
-search: # true, false (default)
-search_full_content: false # true, false (default)
-search_provider: # lunr (default), algolia
+disqus:
+  shortname: basically-basic-theme
+search: true
+search_full_content: true
+search_provider: lunr
 algolia:
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
@@ -37,6 +39,27 @@ algolia:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+lsi: false
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+	
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# Outputting
+permalink: /:categories/:title/
+timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #theme: jekyll-theme-basically-basic
 plugins: # previsously gems
   - jekyll-feed
@@ -50,30 +73,30 @@ feed:
 paginate: 10
 paginate_path: /page:num/
 
-# Exclude from processing.
-exclude:
-  - .asset-cache
-  - .bundle
-  - .codeclimate.yml
-  - .editorconfig
-  - .gitattributes
-  - .jekyll-assets-cache
-  - .sass-cache
-  - .scss-lint.yml
-  - CHANGELOG
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - node_modules
-  - Rakefile
-  - README
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - /docs # ignore Basically Basic sample site
-  - /example # ignore Basically Basic dev site
-
+# # Exclude from processing.
+# exclude:
+#   - .asset-cache
+#   - .bundle
+#   - .codeclimate.yml
+#   - .editorconfig
+#   - .gitattributes
+#   - .jekyll-assets-cache
+#   - .sass-cache
+#   - .scss-lint.yml
+#   - CHANGELOG
+#   - Gemfile
+#   - Gemfile.lock
+#   - LICENSE
+#   - node_modules
+#   - Rakefile
+#   - README
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+#   - /docs # ignore Basically Basic sample site
+#   - /example # ignore Basically Basic dev site
+# 
 # Collections
 collections:
   recipes:
