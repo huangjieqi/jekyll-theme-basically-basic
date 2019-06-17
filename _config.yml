@@ -103,7 +103,7 @@ defaults:
   # _learning
   - scope:
       path: "_learning"
-      type: learning
+      type: recipes
       values:
         layout: post
         read_time: true
