@@ -1,5 +1,5 @@
 ---
-title: Recipes
+title: 平面设计
 layout: collection
 permalink: /recipes/
 collection: recipes
