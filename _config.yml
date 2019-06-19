@@ -26,11 +26,9 @@ author:
 twitter_username:
 github_username: “huangjieqi”
 logo: # path of site logo, e.g. "/assets/images/logo.png"
-# disqus:
-#   shortname: basically-basic-theme
-# search: true
-# search_full_content: true
-# search_provider: lunr
+search: # true, false (default)
+search_full_content: false # true, false (default)
+search_provider: # lunr (default), algolia
 algolia:
   application_id: # YOUR_APPLICATION_ID
   index_name: # YOUR_INDEX_NAME
@@ -39,23 +37,16 @@ algolia:
 
 # Build settings
 markdown: kramdown
-
-# sass:
-#   sass_dir: _sass
-#   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-# Outputting
-# permalink: /:categories/:title/
-# timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 #theme: jekyll-theme-basically-basic
+
 plugins: # previsously gems
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-# feed:
-#   path: atom.xml
-# 
+feed:
+  path: atom.xml
+
 # Pagination - https://jekyllrb.com/docs/pagination/
 paginate: 10
 paginate_path: /page:num/
@@ -85,13 +76,11 @@ exclude:
   - /example # ignore Basically Basic dev site
 
 #Collections
-collections:
-  learning:
-    output: true
-    permalink: /:collection/:path/
-  InterfaceDesign:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   learning:
+#     output: true
+#     permalink: /:collection/:path/
+
 
 # Front Matter Defaults
 defaults:
@@ -102,24 +91,11 @@ defaults:
     values:
       layout: post
       read_time: true
-  # _learning
-  - scope:
-      path: "_learning"
-      type: recipes
-      values:
-        layout: post
-        read_time: true
-  # _recipes
-  - scope:
-      path: "_recipes"
-      type: recipes
-    values:
-      layout: post
-      read_time: true
-  # _recipes
-  - scope:
-      path: "_InterfaceDesign"
-      type: posts
-    values:
-      layout: post
-      read_time: true
+#   # _learning
+#   - scope:
+#       path: "_learning"
+#       type: learning
+#       values:
+#         layout: post
+#         read_time: true
+# 

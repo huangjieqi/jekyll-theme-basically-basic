@@ -2,7 +2,7 @@
 title: 学习笔记
 layout: collection
 permalink: /learning/
-collection: recipes
+collection: learning
 entries_layout: grid
 ---
 

@@ -35,6 +35,7 @@ google_fonts:
 
 navigation_pages:
   - about.md
-  - learning.md
-  - recipes.md
-  - InterfaceDesign.md
+  - 网站结构.md
+  - 页面设计.md
+  - svg制作.md
+  - 学习笔记.md
