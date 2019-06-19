@@ -86,10 +86,12 @@ exclude:
 
 #Collections
 collections:
-  recipes:
+  learning:
     output: true
     permalink: /:collection/:path/
-
+  InterfaceDesign:
+    output: true
+    permalink: /:collection/:path/
 
 # Front Matter Defaults
 defaults:
